@@ -7,21 +7,65 @@ main:
   - name: Bio
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
-    weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
+  - name: CV
+    url: static/uploads/cv.pdf
+    weight: 40
+  #- name: Talks
+   # url: /#talks
+    #weight: 12
+  - name: PE Dev
+    url: /pe_dev
     weight: 13
-  - name: Experience
-    url: experience/
-    weight: 20
-  - name: Projects
-    url: projects/
-    weight: 30
+  #- name: Experience
+   # url: experience/
+    #weight: 20
+  
   - name: Teaching
     url: teaching/
-    weight: 40
+    weight: 30
+  - name: Varun, What?
+    url: varun_what/
+    weight: 50
+
+
+
+#[[main]]
+   # name = "CV"
+    url = "files/varun_cv.pdf"
+    #weight = 40
+
+
+# [[main]]
+#  name = "Posts"
+#  url = "#posts"
+# weight = 20
+#[[main]]
+ ##url = "research/"
+  #weight = 20
+
+#[[main]]
+# name = "Publications"
+#  url = "#publications"
+#  weight = 30
+  
+#[[main]]
+#  name = "Working Papers"
+#  url = "#projects"
+#  weight = 40
+
+#[[main]]
+#  name = "Courses"
+#  url = "courses/"
+#  weight = 50
+
+
+
+#[[main]]
+ # name = "Teaching"
+  #url = "teaching/"
+  #weight = 30
+#[[main]]
+ # name = "Varun, What?"
+  #url = "Varun_What"
+ # weight = 50
+ 

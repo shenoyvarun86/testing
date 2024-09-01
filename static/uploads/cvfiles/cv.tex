@@ -1,0 +1,328 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV and you may
+% redistribute the source code freely. No attribution is required in any resulting
+% documents. I do ask that you please leave this notice and the above URL in the
+% source code if you choose to redistribute this file.
+
+\documentclass[10pt, letterpaper]{article}
+
+% same document produces both academic and industry cv
+\usepackage{etoolbox}
+\newtoggle{cv}
+\toggletrue{cv}       % academic
+% \togglefalse{cv}    % professional
+
+\usepackage{hyperref, geometry, setspace, etaremune, array, bibentry,
+  longtable, fontspec}
+\usepackage[dvipsnames,usenames]{xcolor}
+\usepackage{comment}
+\usepackage{helvet} % or any other sans-serif font you prefer
+\usepackage{lmodern} % Load Latin Modern font\texttt{}
+\definecolor{darkblue}{rgb}{0,0,.9}
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+
+\def\name{Varun Karekurve Ramachandra}
+\def\footerlink{https://varunkr.com}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true, urlcolor = maroon, pdfauthor = {\name},
+  pdfkeywords = {political science, political economy, causal inference, econometrics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\iftoggle{cv}{
+  \geometry{
+    left=0.5in,
+    top=0.5in,
+    right=0.5in,
+    bottom=0.5in
+  }
+  % Customize page headers
+  \pagestyle{myheadings}
+  \markright{\name}
+  \thispagestyle{empty}
+}{
+  \geometry{
+    left=0.5in,
+    top=0.5in,
+    right=0.5in,
+    bottom=0.5in
+  }
+}
+
+
+
+% Custom section fonts
+%\usepackage{sectsty}
+% \sectionfont{\rmfamily\mdseries\Large\textsc}
+% \subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\newcolumntype{L}{>{\raggedleft}p{0.20 \textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\vrule width 0.5pt}
+
+\begin{document}
+
+\begin{minipage}{0.5\linewidth}
+{\huge \name}
+\end{minipage}
+\begin{minipage}{0.7\linewidth}
+\begin{tabular}{ll}
+Phone:    & +1 (585) 490 6468 \\
+
+Email:    & \href{mailto:varun.rama@usc.edu}{varun.rama@usc.edu} \\
+Homepage: & \href{https://dornsife.usc.edu/profile/varun-karekurve-ramachandra/}{https://varunkr.com}  %\\
+%Github:   & \href{https://github.com/apoorvalal}{apoorvalal} \\
+
+\end{tabular}
+\end{minipage}
+\\
+\noindent\hrulefill
+
+% /*
+% ███████ ██████  ██    ██  ██████  █████  ████████ ██  ██████  ███    ██
+% ██      ██   ██ ██    ██ ██      ██   ██    ██    ██ ██    ██ ████   ██
+% █████   ██   ██ ██    ██ ██      ███████    ██    ██ ██    ██ ██ ██  ██
+% ██      ██   ██ ██    ██ ██      ██   ██    ██    ██ ██    ██ ██  ██ ██
+% ███████ ██████   ██████   ██████ ██   ██    ██    ██  ██████  ██   ████
+% */
+
+	 \section*{Employment}
+	\input{work_short} % for cv
+%	\input{skills_table}
+
+\section*{Education}
+
+\begin{tabular}{L!{\VRule}R}
+	2022& \textbf{Ph.D. Political Science,} \\
+	& \href{https://www.sas.rochester.edu/psc/}{University of Rochester},
+	\emph{Rochester, NY}
+	\\[2pt]
+	& Primary fields: \emph{Political Methodology, and Comparative Politics} \\ [3pt]
+	% & Secondary field: \emph{Comparative Politics} \\
+	 
+	2014 & Post-Graduate Diploma, Complex Systems Modelling\\
+	& \href{https://www.kcl.ac.uk/research/disordered-systems} {King’s College London}, \emph{London, UK}\\[3pt]
+	2008& \textbf{B.E. Mechanical Engineering,} \\
+	& \href{https://nie.ac.in/}{National Institute of Engineering},
+	\emph{Mysore, India}
+	\\[3pt]
+	
+	% 2011
+	%   & A-Levels,
+	%   Rato Bangala School, \emph{Kathmandu, Nepal}
+\end{tabular}
+
+% ########  ########  ######  ##     ## ##     ## ########
+% ##     ## ##       ##    ## ##     ## ###   ### ##
+% ##     ## ##       ##       ##     ## #### #### ##
+% ########  ######    ######  ##     ## ## ### ## ######
+% ##   ##   ##             ## ##     ## ##     ## ##
+% ##    ##  ##       ##    ## ##     ## ##     ## ##
+% ##     ## ########  ######   #######  ##     ## ########
+
+
+
+% /*
+% ██████   █████  ██████  ███████ ██████  ███████
+% ██   ██ ██   ██ ██   ██ ██      ██   ██ ██
+% ██████  ███████ ██████  █████   ██████  ███████
+% ██      ██   ██ ██      ██      ██   ██      ██
+% ██      ██   ██ ██      ███████ ██   ██ ███████
+% */
+\section*{Research}
+
+\iftoggle{cv}{
+  \subsection*{Research Interests}
+	\textbullet{} Comparative Politics
+  \textbullet{} Causal Inference
+\textbullet{} Political Economy of Development
+  \textbullet{} Bias \& Discrimination
+}{
+  \subsection*{Research Interests}
+  Causal Inference
+  \textbullet{} Applied Econometrics
+  \textbullet{} Machine Learning
+  \textbullet{} Reinforcement Learning
+  \textbullet{} Political Economy
+  \textbullet{} Economic Development
+}
+
+
+\input{papers.tex}
+
+
+
+
+%    ###    ##      ##    ###    ########  ########   ######
+%   ## ##   ##  ##  ##   ## ##   ##     ## ##     ## ##    ##
+%  ##   ##  ##  ##  ##  ##   ##  ##     ## ##     ## ##
+% ##     ## ##  ##  ## ##     ## ########  ##     ##  ######
+% ######### ##  ##  ## ######### ##   ##   ##     ##       ##
+% ##     ## ##  ##  ## ##     ## ##    ##  ##     ## ##    ##
+% ##     ##  ###  ###  ##     ## ##     ## ########   ######
+
+
+\section*{Awards, Honors, and Grants}
+
+\begin{etaremune}
+\setlength\itemsep{0.05em}
+
+\item Center for International Studies Research Assistantships Grant, $\$40,000$, 2023-2024
+\item  Center for International Studies Conference Grant, $\$15,000$, 2023
+\item Spanish Ministry of Science Grant (joint with Nikitas Konstantinidis, Zuheir Desai, Andrew
+Bertoli, Laura Jakli, Emmy Lindstam, Henry Pascoe, Francisco Villamil, and Elsa Voytas),  $\texteuro{120,000}$, 2023
+\item Center for International Studies Conference Grant, $\$12,000$, 2022
+	\item Winner of Best Paper in Urban or Regional Politics -- 2021 American Political Science Association Conference
+\item Dean’s Post-Field Research Dissertation Completion Fellowship, $\$25,000$, 2021-22, 
+\item Beck Research Grant, 2019-20
+\item Wallis Institute of Political Economy PEPR Grant (\textit{with} \href{https://www.rochester.edu/college/faculty/alexander_lee/}{Alexander Lee}), 2018-19 
+
+%\item Gomtibai Govindji Award for overall best performing student in Takshashila Institution's Graduate Certificate in Public Policy, 2014
+\end{etaremune}
+
+% \iftoggle{cv}{
+\input{talks}
+% }
+
+\section*{Research Initiatives}
+
+\begin{etaremune}
+	\setlength\itemsep{0.05em}
+	
+	\item Co-Convener (\textit{with} \href{https://zuheirdesai.com/}{Zuheir Desai}, Ohio State University), Annual Conference on the New Perspectives on the Political Economy of Development (2024, scheduled)
+	%\item Created a Panel(joint \textit{with} \href{https://www.feyaadallie.com/}{Feyaad Allie}, Harvard University) on Elections, Parties, and Representation in Non-Western Democracies, for the annual American Political Science Association Conference  (2023)
+	\item Co-Convener (\textit{with} \href{https://zuheirdesai.com/}{Zuheir Desai}, Ohio State University), Annual Conference on the New Perspectives on the Political Economy of Development (2023)
+%	\item Created a Panel on  Political Institutions in the Developing World for the annual American Political Science Association Conference (2023)
+%	\item Created a Panel on Gender Quotas, Women’s Political Participation, and Leadership for the annual American Political Science Association Conference (2021)
+%\item	Created a Panel (joint with Zuheir Desai)  on New Perspectives on  Political Accountability for the annual American Political Science Association Conference (2021)
+\end{etaremune}
+
+\section*{Teaching}
+\begin{tabular}{L!{\VRule}R}
+
+Fall 2023 &\textbf{POIR 610 (G): Graduate Research Design}, Course Design, Instruction  \& Evaluation \newline 
+\textbf{POSC 442 (UG): The Politics of Human Differences:
+Diversity and Discrimination}, Course Design, Instruction  \& Evaluation \\
+
+Spring 2020 & \textbf{Graduate Causal Inference}, Teaching Assistant, Recitation Design \\
+Fall 2019 & \textbf{Undergraduate: Discrimination}, Teaching Assistant\\
+ Spring 2019 & \textbf{Graduate Linear Models}, Teaching Assistant, Recitation Design \\
+Fall 2018 & \textbf{Graduate Probability and Inference}, Teaching Assistant, Recitation Design\\
+
+\end{tabular}
+
+
+\section*{Service}
+
+\begin{tabular}{L!{\VRule}R}
+	
+	2024 & Member, ad-hoc faculty search committee POIR 2023-24\\
+	& Co-Organizer, CIS comparative politics workshop series, 2024-25\\
+	%& Member, Summer Graduate Funding Committee, 2024\\
+	
+	\textbf{Reviewer} & \\
+	& Oxford University Press\\
+	& American Political Science Review\\
+	& American Journal of Political Science\\
+	& World Development\\
+	& Journal of Politics\\
+	& Journal of Law and Courts\\
+	& Politics and Gender\\
+	& Economic Development and Cultural Change\\
+	
+	\textbf{Students \& Research Assistants} & \\
+	& Bijean Ghafouri (PhD, University of Southern California)\\
+	& Raveena Dosanjh (Undergraduate, University of Southern California)\\
+	& Nikka Makhani (Undergraduate, University of Southern California)\\
+	& Rohit Iyengar (Law Student, NALSAR University of Law, India)\\
+	& Ronit Shah (Tata Institute of Social Sciences, India)\\
+\end{tabular}
+
+\iftoggle{cv}{
+	% omit employment table here for academic cv
+}{
+	% for resume
+	\input{skills_table}
+	\input{work_table}
+}
+
+\section*{\bfseries Policy Writing}
+
+\begin{etaremune}
+	\item ``Karnataka's Changing Fiscal Landscape'' (\textit{with} \href{https://takshashila.org.in/staff/pranay-kotasthane/}{Pranay Kotasthane}) Economic \& Political Weekly 51 (33), 21, 2015 
+	
+	\item ``Impact of Fourteenth Finance Commission: Karnataka Budget 2015 - 2016'' (\textit{with} \href{https://takshashila.org.in/staff/pranay-kotasthane/}{Pranay Kotasthane}) Economic and Political Weekly, vol. 50 (no. 46-47), pp.16-20, 2015. 
+\end{etaremune}
+
+
+ 
+	 \section*{Pre-Graduate School Employment}
+\begin{tabular}{L!{\VRule}R}	
+	12/2014 - 06/2016 & {\small \bf Public Policy Analyst}  \\ &
+	\href{https://takshashila.org.in/}{Takshashila Institution}, \emph{Bangalore, India} \\
+	08/2013 - 12/2014 & {\small \bf Strategy Analyst}  \\ &
+	\href{https://www.accenture.com/}{Accenture}, \emph{Bangalore, India} \\
+	11/2011 - 12/2012 & {\small \bf Global Consumer Insights Analyst}  \\ &
+	\href{https://www.inmobi.com/}{InMobi Technologies}, \emph{Bangalore, India} \\
+	
+		 \end{tabular}
+	 \section*{Other Activities}
+	 \begin{tabular}{L!{\VRule}R}	
+	 	12/2020 - \textit{present} & {\small \bf Co-Founder}  \\ 
+	 	& India Wants to Know (\href{https://x.com/IWTKQuiz}{@IWTKQuiz}) (\href{https://www.instagram.com/iwtkquiz/}{Instagram}) \\
+	 \end{tabular}
+
+
+\begin{comment}
+
+
+\section*{References}
+\begin{tabular}{cc}
+\hline
+\href{https://web.stanford.edu/~jhain/index.htm}{Jens Hainmueller} &
+\href{https://stanford.edu/~avidit/} {Avidit Acharya}\\
+Professor of Political Science and Political Economy &
+Associate Professor of Political Science and Political Economy \\
+Stanford & Stanford \\
+\href{jhain@stanford.edu}{jhain@stanford.edu} &
+\href{avidit@stanford.edu}{avidit@stanford.edu} \\
+\hline \\
+\href{https://justingrimmer.org/}{Justin Grimmer} &
+\href{http://web.stanford.edu/~swager/index.html}{Stefan Wager}\\
+Professor of Political Science &
+Associate Professor of OIT and Statistics\\
+Stanford & Stanford GSB \\
+\href{jgrimmer@stanford.edu}{jgrimmer@stanford.edu} &
+\href{swager@stanford.edu}{swager@stanford.edu} \\
+\hline \\
+\end{tabular}
+\end{comment}
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\footerlink}
+  \end{footnotesize}
+\end{center}
+
+\end{document}

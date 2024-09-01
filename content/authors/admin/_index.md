@@ -1,4 +1,4 @@
----
+<!--
 # Display name
 title: 吳健雄
 
@@ -183,4 +183,64 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks. -->
+
+---
+authors:
+- admin
+bio: comparative politics.
+
+
+education:
+  courses:
+  - course: PhD Political Science
+    institution: University of Rochester, New York, USA.
+    year: 2016 - 2022
+  - course: PG Diploma in Complex Systems Modelling
+    institution: King's College London, United Kingdom.
+    year: 2014
+  - course: BE Mechanical Engineering
+    institution: The National Institute of Engineering, Mysore, India.
+    year: 2008
+email: "varun.rama [AT] usc [DOT] edu"
+interests:
+- Comparative Politics
+- Political Economy of Development
+- Bias and Discrimination
+- Causal Inference
+
+
+name: Varun Karekurve-Ramachandra
+organizations: 
+- name: University of Southern California
+  url: ""
+role: Assistant Professor
+social:
+social:
+- icon: envelope
+  icon_pack: fas
+  link: mailto:varun.rama@usc.edu
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/_quale
+
+
+
+superuser: true
+user_groups:
+- Researchers
+- Visitors
+---
+I am an Assistant Professor of Political Science and International Relations at the University of Southern California. Previously, I was the inaugural Gerhard Casper Postdoctoral Fellow in Rule of Law at the Center on Democracy, Development and the Rule of Law in Stanford University.  I obtained my PhD in political science at the University of Rochester in 2022
+
+My primary research interest lies in the political economy of development. I use an institutional lens and a wide range of methods to analyze  the causes, consequences, and potential solutions to   bias and discrimination. Specifically, I study topics such as the judiciary, women in politics, political representation, political parties, and bureaucracies in the developing world, with a regional focus on South Asia. 
+
+<!--- I am also exploring questions surrounding misinformation, disinformation, and technological innovations that have the potential to reshape the way we perceive political institutions.My work has appeared (or is forthcoming) in the _American Journal of Political Science,  The Quarterly Journal of Political Science, and Comparative Political Studies_. 
+-->
+
+If you want to talk more about my work, or just say hi, please get in touch. My email is: varun.rama [AT] usc [DOT] edu
+My CV is available {{% staticref "static/uploads/cv.pdf" "newtab" %}}here{{% /staticref %}}
+
+
+
+
